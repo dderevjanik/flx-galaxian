@@ -1,0 +1,7 @@
+{
+    "maxFps": 30,
+    "canvasId": "canvas",
+    "canvasWidth": 103,
+    "canvasHeight": 200,
+    "spritesSrc": "img/sprites.png"
+}

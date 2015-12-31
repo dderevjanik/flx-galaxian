@@ -1,0 +1,32 @@
+{
+    "player": {
+        "speed": 3,
+        "dir": 2,
+        "sprite": "player"
+    },
+    "e1": {
+        "speed": 1,
+        "dir": 1,
+        "sprite": "e1"
+    },
+    "e2": {
+        "speed": 1,
+        "dir": 1,
+        "sprite": "e2"
+    },
+    "e3": {
+        "speed": 1,
+        "dir": 1,
+        "sprite": "e3"
+    },
+    "e4": {
+        "speed": 1,
+        "dir": 1,
+        "sprite": "e4"
+    },
+    "bullet": {
+        "speed": 2,
+        "dir": 2,
+        "sprite": "bullet"
+    }
+}
