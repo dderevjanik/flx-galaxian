@@ -6,12 +6,12 @@ module.exports = {
     debug: true,
     devtools: "eval",
     entry: {
-        app: ["./src/index.js"]
+        app: ["./src/app.js"]
     },
     output: {
         path: path.resolve(__dirname, "./dist/"),
         publicPath: "./dist/",
-        filename: "index.js",
+        filename: "app.js",
     },
     module: {
         loaders: [

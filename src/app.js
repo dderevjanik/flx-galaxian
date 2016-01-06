@@ -27,21 +27,21 @@ const loop = () => {
 
     // Recur
     setTimeout(loop, 1000/maxFps);
-}
+};
 
 const init = () => {
-    // create enemies based on level
+    // Create enemies based on level
     LevelHelper.loadLevel(FirstLevel).forEach(action => {
         dispatcher.dispatch(action);
     });
 
-    // create player actor
+    // Create player actor
     dispatcher.dispatch({type: 'PLAYER_CREATE', payload: {type: 'player', x: 50, y: 160}});
 
     document.addEventListener( "keypress", (keyEvent) => {keyPressed = keyEvent.keyCode});
-}
+};
 
-// Create canvas, promise->then (because of loading src from url)
+// Create canvas, promise->then (loading src from url)
 CanvasHelper.CreateCanvas(Config.canvasId,
                           Config.canvasWidth,
                           Config.canvasHeight,

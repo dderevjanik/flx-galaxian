@@ -24,7 +24,7 @@ const playerStore = Store.CreateStore({
 
         PLAYER_MOVE: (state, action) => {
             const payload = action.payload;
-            //UGLY
+            // UGLY
             state.actors[0].dir = payload.dir;
             state.actors[0].speed = 3;
             state.actors[0] = ActorHelper.moveActor(state.actors[0]);

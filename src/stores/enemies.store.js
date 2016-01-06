@@ -3,9 +3,9 @@ import ActorHelper from './../utils/actorHelper.js';
 
 const enemyStore = Store.CreateStore({
     initState: {
-        actors: [], // actors to render
-        steps: 0,   // number of steps
-        dir: 0,     // enemies direction
+        actors: [], // Actors to render
+        steps: 0,   // Number of steps
+        dir: 0,     // Enemies direction
     },
 
     handleAction: {

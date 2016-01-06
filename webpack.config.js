@@ -3,7 +3,7 @@ const webpack = require("webpack");
 module.exports = {
     output: {
         path: __dirname + "/dist",
-        filename: "index.js",
+        filename: "app.js",
         library: "fluxga",
         libraryTarget: "this"
     },

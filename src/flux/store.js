@@ -25,7 +25,7 @@ const CreateStore = (definition) => {
         }
 
         // Replace old state with new (returned state from callback)
-        state = callback.state; 
+        state = callback.state;
 
         // Return new action disptach
         return callback.action;
@@ -50,12 +50,12 @@ const CreateStore = (definition) => {
         }
     };
 
-    // validate store 
+    // Validate store 
     valid(definition);
 
     return {
-        state: state,       // current state of store
-        dispatch: dispatch  // method for dispatch action
+        state: state,       // Current state of store
+        dispatch: dispatch  // Method for dispatch action
     };
 };
 

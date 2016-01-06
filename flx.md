@@ -41,7 +41,7 @@ const myStore = CreateStore({
             console.log(`myStore received: SOME_ACTION`);
             return {state: state, action: null}
         },
-        // Feel free to add another action
+        // Feel free to add another actions
     }
 });
 ```

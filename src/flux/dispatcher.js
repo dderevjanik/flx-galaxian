@@ -23,7 +23,7 @@ const CreateDispatcher = (storesToMount = []) => {
             actions = [].concat.apply([], newActions);  // flatten all ArrayOf[ArraOf[action]]
         }
 
-        // when callback is defined, call store interface
+        // When callback is defined, get store's state
         if (callback) {
             callback(stores.map(store => store.state));
         }
@@ -36,7 +36,7 @@ const CreateDispatcher = (storesToMount = []) => {
      * @param {object} store.initState - object 
      */
     const mount = (store) => {  // @TODO add support for array of Stores
-        // throw error if store is already mounted
+        // Throw error if store is already mounted
         if (store in stores) {
             throw new Error(`Can't mount Store to Dispatcher: Store already exists`);
         }

@@ -45,7 +45,7 @@ const CreateCanvas = (canvasId, canvasWidth, canvasHeight, canvasBckg, spritesSr
         canvasCtx.fillRect(0, 0, canvasHtml.width, canvasHtml.height);
     };
 
-    // need to wait for sprites load
+    // Need to wait for sprites load
     return new Promise((resolve, reject) => {
         sprites.onload = () => {
             resolve({
